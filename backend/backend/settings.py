@@ -25,18 +25,28 @@ SECRET_KEY = 'django-insecure-vtj&d^x9(#36&w14+x^&j)fb+n*&#s0!y$+aug5_)-4%!__nnh
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
+CORS_ORIGIN_ALLOW_ALL = True
 
 
 # Application definition
-
-INSTALLED_APPS = [
-    'django.contrib.admin',
-    'django.contrib.auth',
-    'django.contrib.contenttypes',
-    'django.contrib.sessions',
-    'django.contrib.messages',
-    'django.contrib.staticfiles',
+INSTALLED_APPS = [    
+    'django.contrib.admin',    
+    'django.contrib.auth',    
+    'django.contrib.contenttypes',    
+    'django.contrib.sessions',    
+    'django.contrib.messages',    
+    'django.contrib.staticfiles',    
+    
+    # 3rd    
+    'corsheaders',    
+    'rest_framework',    
+    # 'rest_framework.authtoken',    
+    # 'djoser',
+    # 'rest_framework_simplejwt',
+    
+    # local    
+    'root',    
 ]
 
 MIDDLEWARE = [
