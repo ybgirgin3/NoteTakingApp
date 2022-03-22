@@ -1,14 +1,12 @@
 import axios from 'axios';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 function DataController(props) {
-  const options = props.options;
-  const [data, setData] = React.useState([]);
+  // const { method, url, baseURL = 'http://localhost:8000' } = props;
+  const { options } = props;
+  const [data, setData] = useState([]);
 
-  // table styling
-  const tableStyle = {};
-
-  React.useEffect(() => {
+  useEffect(() => {
     axios
       .request(options)
       .then((res) => {
@@ -22,22 +20,6 @@ function DataController(props) {
   }, []);
 
   return data;
-  // <div className="content">
-  //   <table>
-  //     <thead>
-  //       <th>ID</th>
-  //       <th>NAME</th>
-  //       <th>CONTENT</th>
-  //     </thead>
-  //     {data.map((item, index) => (
-  //       <tbody key={index}>
-  //         <td>{item.id}</td>
-  //         <td>{item.name}</td>
-  //         <td>{item.content}</td>
-  //       </tbody>
-  //     ))}
-  //   </table>
-  // </div>
 }
 
 export default DataController;
