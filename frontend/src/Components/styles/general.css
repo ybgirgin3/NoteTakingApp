@@ -1,0 +1,11 @@
+.title {
+  height: 40px;
+  font-size: 30;
+  color: red;
+  border-bottom: 2px solid black;
+
+  /* inner positioning */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
