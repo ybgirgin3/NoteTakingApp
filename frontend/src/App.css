@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body > #root > div {
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: aqua;
+}
+
+.left {
+  width: 25%;
+  height: 100%;
+  background-color: bisque;
+}
