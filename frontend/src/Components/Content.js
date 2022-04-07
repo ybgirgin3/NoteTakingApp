@@ -1,13 +1,13 @@
 import React from 'react';
-import Connection from './Connection';
+import DataRenderer from './DataRendering/DataRenderer';
 
 function Content() {
-  const url = 'api/v1/list';
+  const url = `api/v1/list`;
   const method = 'get';
   const title = 'Content';
   return (
     <div>
-      <Connection title={title} url={url} method={method} />
+      <DataRenderer title={title} url={url} method={method} />
     </div>
   );
 }
