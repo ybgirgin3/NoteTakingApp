@@ -1,5 +1,5 @@
 import React from 'react';
-import Connection from './Connection';
+import DataRenderer from './DataRendering/DataRenderer'
 
 function Sidebar() {
   const url = `api/v1/list`;
@@ -7,7 +7,7 @@ function Sidebar() {
   const title = 'Notes';
   return (
     <div>
-      <Connection title={title} url={url} method={method} />
+      <DataRenderer title={title} url={url} method={method} />
     </div>
   );
 }
