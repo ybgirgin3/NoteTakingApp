@@ -29,3 +29,17 @@ body > #root > div {
   height: 100%;
   background-color: lightgrey;
 }
+
+/* button */
+button {
+  margin-bottom: 5px;
+  padding: 5px;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+}
+
+button:active {
+  border: 0.5px solid black;
+
+}

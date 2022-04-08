@@ -7,6 +7,7 @@ function Content() {
   const title = 'Content';
   return (
     <div>
+        <div className="title">{title.toUpperCase()}</div>
       <DataRenderer title={title} url={url} method={method} />
     </div>
   );

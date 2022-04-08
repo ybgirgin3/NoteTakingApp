@@ -4,7 +4,6 @@ import useFetch from "../useFetch";
 import "../styles/general.css";
 
 function DataRenderer(props) {
-  const title = props.title;
 
   const options = {
     url: props.url,
@@ -17,10 +16,9 @@ function DataRenderer(props) {
   return (
     <div>
       <ul>
-        <div className="title">{title.toUpperCase()}</div>
         {data.map((item, index) => (
           <li key={index}>
-            {item.id}. {item.name}
+            {item.name}-{item.content}
           </li>
         ))}
       </ul>
