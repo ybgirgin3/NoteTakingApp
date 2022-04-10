@@ -11,6 +11,7 @@ const useFetch = (props) => {
     baseURL: variables.baseUrl,
   };
 
+  // fetch data from api
   useEffect(() => {
     axios
       .request(options)
